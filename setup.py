@@ -26,6 +26,7 @@ setup(
     install_requires=[
         'requests>=2.0,<3.0',
         'Flask-Login>=0.2,<0.3',
+        'requests-toolbelt>=0.8.0',
     ],
     classifiers=[
         'Development Status :: 4 - Beta',
