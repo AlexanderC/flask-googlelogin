@@ -12,7 +12,9 @@ from flask import request, redirect, abort, current_app, url_for
 from flask_login import LoginManager, make_secure_token
 
 import requests
+import requests_toolbelt.adapters.appengine
 
+requests_toolbelt.adapters.appengine.monkeypatch()
 
 GOOGLE_OAUTH2_AUTH_URL = 'https://accounts.google.com/o/oauth2/auth'
 GOOGLE_OAUTH2_TOKEN_URL = 'https://accounts.google.com/o/oauth2/token'
